@@ -1,7 +1,7 @@
 package main
 
 import (
-	"myproject/go-advanced-learn/gee/gee_second/gee_second/gee"
+	"myproject/go-advanced-learn/gee/gee_second/gee-router/gee"
 	"net/http"
 )
 
