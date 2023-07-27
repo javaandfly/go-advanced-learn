@@ -9,13 +9,15 @@ type A struct {
 }
 
 func main() {
-	// var a = "aaa"
-	// s := "aaa"
+	var a = "aaa"
+	s := "aaa"
+	fmt.Println(&a)
+	fmt.Println(&s)
 	// c := int64(1)
-
-	var n int
-	n = 1
-	fmt.Println(n)
+	c := a + s
+	// var n int
+	// n = 1
+	fmt.Println(&c)
 
 	// fmt.Println(&s == &c)
 	// fmt.Println(unsafe.Sizeof(&s), unsafe.Sizeof(&c))
