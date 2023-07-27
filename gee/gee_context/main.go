@@ -22,5 +22,10 @@ func main() {
 		})
 	})
 
+	r.GET("/panic", func(c *gee.Context) {
+		names := []string{"dong"}
+		c.String(http.StatusOK, names[100])
+	})
+
 	r.Run(":9999")
 }

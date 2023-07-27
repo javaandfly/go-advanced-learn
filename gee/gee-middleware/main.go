@@ -53,7 +53,12 @@ func main() {
 			// expect /hello/geektutu
 			c.String(http.StatusOK, "hello %s, you're at %s\n", c.Param("name"), c.Path)
 		})
+
 	}
+	r.GET("/panic", func(c *gee.Context) {
+		names := []string{"dong"}
+		c.String(http.StatusOK, names[100])
+	})
 
 	r.Run(":9999")
 }
