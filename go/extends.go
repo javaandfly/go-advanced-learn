@@ -1,26 +1,37 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unsafe"
+)
 
 type A struct {
-	B
 }
 
 type C struct {
-	B B
-}
-
-type B struct {
-	a int
+	A
 }
 
 func main() {
 
-	b := B{a: 1}
-	a := A{B: b}
-	c := C{B: b}
-
-	fmt.Println(c.B.a)
-	fmt.Println(a.a)
+	var c1 *C
+	fmt.Printf("%p, size = %v\n", c1, unsafe.Sizeof(c1))
+	c2 := new(C)
+	fmt.Printf("%p, size = %v\n", c2, unsafe.Sizeof(c2))
+	var c3 C
+	fmt.Printf("%p, size = %v\n", &c3, unsafe.Sizeof(c3))
+	c4 := C{}
+	fmt.Printf("%p, size = %v\n", &c4, unsafe.Sizeof(c4))
+	c5 := &C{}
+	fmt.Printf("%p, size = %v\n", c5, unsafe.Sizeof(&c5))
 
 }
+
+// type B interface {
+// 	Add()
+// 	// A A
+// }
+
+// func add(b B) {
+// 	fmt.Println("yes add")
+// }
