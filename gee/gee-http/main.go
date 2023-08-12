@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"myproject/go-advanced-learn/gee/gee_second/gee-http/gee"
+	"myproject/go-advanced-learn/gee/gee-http/gee"
 
 	"net/http"
 )

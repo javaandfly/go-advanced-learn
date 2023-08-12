@@ -33,7 +33,7 @@ Traceback:
 */
 
 import (
-	"myproject/go-advanced-learn/gee/gee_second/gee-panic-recover/gee"
+	"myproject/go-advanced-learn/gee/gee-panic-recover/gee"
 	"net/http"
 )
 

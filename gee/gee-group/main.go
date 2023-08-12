@@ -35,7 +35,7 @@ $ curl "http://localhost:9999/hello"
 */
 
 import (
-	"myproject/go-advanced-learn/gee/gee_second/gee-group/gee"
+	"myproject/go-advanced-learn/gee/gee-group/gee"
 	"net/http"
 )
 

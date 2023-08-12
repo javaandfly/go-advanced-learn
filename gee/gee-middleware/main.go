@@ -21,7 +21,7 @@ $ curl http://localhost:9999/v2/hello/geektutu
 
 import (
 	"log"
-	"myproject/go-advanced-learn/gee/gee_second/gee-middleware/gee"
+	"myproject/go-advanced-learn/gee/gee-middleware/gee"
 
 	"net/http"
 	"time"
