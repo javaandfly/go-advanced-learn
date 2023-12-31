@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 
 	hook := MyHook{}
@@ -25,10 +23,10 @@ type MyHook struct {
 	Hook Hook
 }
 
-func (m *MyHook) Before() {
-	fmt.Println("before this is a hook")
-}
+// func (m *MyHook) Before() {
+// 	fmt.Println("before this is a hook")
+// }
 
-func (m *MyHook) After() {
-	fmt.Println("after this is a hook")
-}
+// func (m *MyHook) After() {
+// 	fmt.Println("after this is a hook")
+// }
